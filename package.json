@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/*.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "vite preview",
+      "predeploy": "npm run build",
+  "deploy": "gh-pages -d ."
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +20,7 @@
     "posthtml-include": "^2.0.1"
   },
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1"
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
+    "gh-pages": "^6.3.0"
   }
 }
